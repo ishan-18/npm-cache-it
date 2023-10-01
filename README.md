@@ -84,3 +84,13 @@ Cache data with a specified time-to-live (TTL) in seconds.
 Clear cached data.
 1. `prefix (string)`: A string prefix for the cache key.
 2. `key (string)`: The key to identify the cached data.
+
+## Contributing
+Contributions to `npm-cache-it` are welcome! If you'd like to contribute to this project, please follow these steps:
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix: `git checkout -b feature/your-feature-name.`
+3. Commit your changes: `git commit -m "Add your feature or fix".`
+4. Push your branch to your fork: `git push origin feature/your-feature-name.`
+5. Create a pull request on the original repository.
+
+Please follow the Code of Conduct and Contributing Guidelines when contributing.
