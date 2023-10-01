@@ -29,6 +29,13 @@ export const executeOperation = <T>(operation: any) => {
     return undefined;
 }
 
-export const getCacheStatistics = () => {
+export interface CacheStatistics {
+    size: number;
+    hits: number;
+    misses: number;
+    keys: string[];
+}
+
+export const getCacheStatistics = (): CacheStatistics => {
     return cacheClient.getStats();
 };
