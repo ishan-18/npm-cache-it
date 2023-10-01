@@ -1,6 +1,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const { getCachedData, putDataInCacheWithTTL, clearCacheData } = require('npm-cache-it');
+const getCacheStatistics = require('../src/cache')
 
 const app = express();
 const port = process.env.PORT || 3000;
@@ -78,6 +79,11 @@ app.delete('/people/:id', async (req, res) => {
   } catch (error) {
     res.status(500).json({ error: 'Error deleting person' });
   }
+});
+
+app.get('/cache-stats', (req, res) => {
+    const cacheStats = getCacheStatistics();
+    res.json(cacheStats);
 });
 
 app.listen(port, () => {

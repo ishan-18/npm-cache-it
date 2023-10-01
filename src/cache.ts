@@ -2,6 +2,16 @@ import NodeCache from "node-cache";
 
 const cacheClient: any = new NodeCache();
 
+export const getCacheStatistics = () => {
+    const stats: any = {
+        size: cacheClient.getStats().keys,
+        hits: cacheClient.stats.hits,
+        misses: cacheClient.stats.misses,
+        keys: cacheClient.keys(),
+    };
+    return stats;
+};
+
 export const getCachedData = <T>(prefix: string, key: string) => {
     return executeOperation(() => cacheClient.get(getCompoundKey(prefix, key)));
 }
