@@ -1,0 +1,25 @@
+{
+  "name": "npm-cache-it",
+  "version": "1.0.0",
+  "description": "A high-performance caching library for JavaScript and TypeScript. Simplify data caching and retrieval, improve application performance, and reduce database load with this easy-to-use caching solution. Ideal for web applications, APIs, and server-side rendering.",
+  "main": "dist/cache.js",
+  "types": "dist/cache.d.ts",
+  "scripts": {
+    "build": "node_modules/.bin/tsc"
+  },
+  "keywords": [
+    "node",
+    "cache",
+    "javascript",
+    "typescript",
+    "optimisation"
+  ],
+  "author": "Ishan Gawali",
+  "license": "ISC",
+  "dependencies": {
+    "node-cache": "^5.1.2"
+  },
+  "devDependencies": {
+    "typescript": "^5.2.2"
+  }
+}
