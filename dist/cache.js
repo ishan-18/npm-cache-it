@@ -3,7 +3,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.executeOperation = exports.getCompoundKey = exports.clearCacheData = exports.putDataInCacheWithTTL = exports.putDataInCache = exports.getCachedData = void 0;
+exports.getCacheStatistics = exports.executeOperation = exports.getCompoundKey = exports.clearCacheData = exports.putDataInCacheWithTTL = exports.putDataInCache = exports.getCachedData = void 0;
 const node_cache_1 = __importDefault(require("node-cache"));
 const cacheClient = new node_cache_1.default();
 const getCachedData = (prefix, key) => {
@@ -34,3 +34,7 @@ const executeOperation = (operation) => {
     return undefined;
 };
 exports.executeOperation = executeOperation;
+const getCacheStatistics = () => {
+    return cacheClient.getStats();
+};
+exports.getCacheStatistics = getCacheStatistics;
