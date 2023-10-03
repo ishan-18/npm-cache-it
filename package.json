@@ -5,6 +5,7 @@
   "main": "./dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
+    "dev": "node ./dist/index.js",
     "build": "node_modules/.bin/tsc"
   },
   "repository": {

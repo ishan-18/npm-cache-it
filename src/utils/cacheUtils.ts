@@ -1,6 +1,4 @@
-import NodeCache from "node-cache";
-
-const cacheClient: any = new NodeCache();
+import { cacheClient } from "..";
 
 /**
  * Execute a caching operation and handle errors.
