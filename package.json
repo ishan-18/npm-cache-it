@@ -1,6 +1,6 @@
 {
   "name": "npm-cache-it",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "A high-performance caching library for JavaScript and TypeScript. Simplify data caching and retrieval, improve application performance, and reduce database load with this easy-to-use caching solution. Ideal for web applications, APIs, and server-side rendering.",
   "main": "./dist/index.js",
   "types": "dist/index.d.ts",
