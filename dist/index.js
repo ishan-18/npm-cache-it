@@ -24,3 +24,4 @@ __exportStar(require("./cache"), exports);
 __exportStar(require("./set"), exports);
 __exportStar(require("./hset"), exports);
 __exportStar(require("./mset"), exports);
+__exportStar(require("./utils/cacheUtils"), exports);
