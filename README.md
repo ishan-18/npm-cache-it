@@ -369,15 +369,15 @@ Gets an array of cache keys that match a specified prefix pattern.
 - `prefix (string)`: The prefix to search for in cache keys.
 - `{string[]}`: Returns an array of cache keys matching the specified prefix pattern.
 
-### `flushCacheWithPrefix`
+#### `flushCacheWithPrefix`
 Flushes all cache entries with a specific prefix.
 - `prefix (string)`: The prefix for the cache entries to flush.
 
-### `getAllCacheKeys`
+#### `getAllCacheKeys`
 Gets an array of all cache keys.
 - `{string[]}`: Returns An array of all cache keys.
 
-### `flushAll`
+#### `flushAll`
 Flushes all cache entries .
 
 ## SET
